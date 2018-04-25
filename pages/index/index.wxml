@@ -1,0 +1,120 @@
+ <view class="index">
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="index-main">
+    <swiper bindchange='swiper'>
+
+      <swiper-item id="index-intro">
+        <image class="index-intro__logo" src="{{ imgLogo }}"></image>
+        <view class="index-intro__detail">
+           <text>每日一首歌，等你来挑战。全民一歌基于节日，明星热点，用户留言每天推荐一首主题歌，微信所有用户体验主题歌，全员排名，挑战擂台，分享快乐。</text> 
+        </view>
+        <view
+          class="index-intro__btn btn btn-danger btn-md"
+          bindtap="buyAction"
+          >
+          挑战区
+        </view>
+      </swiper-item>
+
+       <swiper-item id="index-service">
+        <image class="index-intro__logo" src="{{ imgLogo }}"></image>
+        <view class="index-intro__detail">
+          <text>全民一歌有人气榜，实力榜两大榜单，人气基于全员投票点赞排名，实力榜基于音乐人、系统综合评分排名。在这里，你可以秀出音色，秀出排名，秀出唱功，秀出交友……</text>
+        </view>
+        <view
+          class="index-intro__btn btn btn-danger btn-md"
+          bindtap="buyAction1"
+          >
+         分享区
+        </view>
+      </swiper-item> 
+
+
+      <swiper-item id="index-service">
+        <image class="index-intro__logo" src="{{ imgLogo }}"></image>
+        <view class="index-intro__detail">
+          <text>链接一个客服MM</text>
+        </view>
+        <view
+          class="index-intro__btn btn btn-danger btn-md"
+          bindtap="buyAction2"
+          >
+         帮助
+        </view>
+      </swiper-item> 
+      <!-- <swiper-item class="index-profile">
+        <image
+          class="index-profile__avatar"
+          src="{{ userInfo.isLogin ? avatarUrl : imgLogout }}"
+        ></image>
+        <view class="index-profile__title h2" wx:if="{{ !userInfo.isLogin }}">
+          <view class="">未登录</view>
+          <view class="index-profile__authorization">如若使用完整未来社功能，请先授权</view>
+        </view>
+
+        <view class="index-profile__detail" wx:else>
+
+          <view class="index-profile__info" wx:if="{{ !userInfo.isProfileComplete }}">
+
+            <text> 资料待完善... </text>
+            <view
+              class="btn btn-md btn-danger"
+              bindtap="goToProfile"
+            >
+              完善资料
+            </view>
+          </view>
+
+          <view class="index-profile__info" wx:else>
+            <view>
+              姓名：{{ userInfo.name }}
+            </view>
+            <view>
+              手机：{{ userInfo.phone }}
+            </view>
+            <view>
+              公司：{{ userInfo.company }}
+            </view>
+          </view>
+
+          <view class="index-profile__space">
+            <view
+              class="btn btn-md btn-danger"
+              bindtap="goToProfile"
+              hidden="{{ !userInfo.isProfileComplete }}"
+            >
+              修改资料
+            </view>
+              <text>众创空间状态</text>
+              <text>
+                {{ !userInfo.is_member ? '您还没有购买会员服务' : '已购买会员，请尽情享受 :-)' }}
+              </text>
+          </view>
+
+        </view>
+      </swiper-item> -->
+    </swiper>
+
+  </view>
+
+    <view class="index-dots">
+        <view
+          class="index-dot"
+          wx:key="index"
+          wx:for="{{ pageCount }}"
+          >
+          <image
+            class="pager-img"
+            src="{{ pageIndex !=item ? imgDot : imgDotActive }}"
+          ></image>
+        </view>
+    </view>
+</view> 

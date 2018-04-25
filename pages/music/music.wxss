@@ -1,0 +1,10 @@
+/* pages/newMusic/index.wxss */
+/* view{
+  padding: 15px;
+} */
+
+.button-style{    
+    background-color: #eee;    
+    border-radius: 8rpx;    
+    margin: 20rpx;    
+}   

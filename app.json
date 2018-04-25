@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/profile/profile",
+    "pages/help/help",
+    "pages/music/music",
+    "pages/share/share"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F5F2E9",
+    "navigationBarTitleText": "全民一歌",
+    "navigationBarTextStyle": "black"
+  }
+}

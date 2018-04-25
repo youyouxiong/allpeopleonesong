@@ -1,0 +1,40 @@
+/* pages/newshare/index.wxss */
+view{
+  padding: 15px;
+  background-color: #eee;    
+  border-radius: 8rpx;    
+  margin: 20rpx;  
+} 
+
+.nav-left,.nav-right{
+text-align: center;
+}
+.nav-left,.nav-right{
+text-align: center;
+}
+.nav-left>view,.nav-right>view{
+width: 45rpx;
+height: 45rpx;
+margin: 0 auto;
+margin-top: 15rpx;
+}
+.nav-left>view image, .nav-right>view image{
+width: 100%;
+height: 100%;
+vertical-align: top;
+}
+.nav-left text,.nav-right text{
+display: block;
+margin-top: -30rpx;
+font-size: 20rpx;
+}
+.nav-right button image{
+width: 100%;
+height: 100%;
+vertical-align: top;
+}
+.nav-right button text{
+display: block;
+margin-top: -4rpx;
+font-size: 20rpx;
+}

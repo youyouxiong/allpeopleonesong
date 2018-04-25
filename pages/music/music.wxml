@@ -1,0 +1,18 @@
+<!-- <!-- <view>
+  <button bindtap='startRecordAac' type='primary'>录音开始（aac）</button>
+</view> -->
+<!-- <view>
+  <button bindtap='startRecordMp3' type='primary'>录音开始（mp3）</button>
+</view>
+<view>
+  <button bindtap='stopRecord' type='primary'>录音结束</button>
+</view>
+<view>
+  <button bindtap='playRecord' type='primary'>播放录音</button>
+</view> --> 
+<button class="button-style" type="primary" bindtap="listenerButtonPlay">播放</button>  
+<button class="button-style" type="primary" bindtap="listenerButtonPause">暂停</button>  
+<button class="button-style" type="primary" bindtap="listenerButtonSeek">设置播放进度</button>  
+<button class="button-style" type="primary" bindtap="listenerButtonStop">停止播放</button>  
+<button class="button-style" type="primary" bindtap="listenerButtonGetPlayState">获取播放状态</button>  
+
